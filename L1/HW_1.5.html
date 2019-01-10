@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    let ticket = +prompt('Введите шестизначный номер билета');
+    let first_part = parseInt(ticket / 1000);
+    let second_part = ticket % 1000;
+    let first_part_summ = 0, second_part_summ = 0;
+    while (first_part > 0) {
+        first_part_summ += first_part % 10;
+        first_part = +parseInt(first_part / 10)
+    }
+    while (second_part > 0) {
+        second_part_summ += second_part % 10;
+        second_part = +parseInt(second_part / 10)
+    }
+    if (first_part_summ == second_part_summ) {
+        alert('Билет счастливый!')
+    }
+    else {
+        alert('Счастье не в билетах!')
+    }
+</script>
