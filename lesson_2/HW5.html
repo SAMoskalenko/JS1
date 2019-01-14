@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<script>
+    "use strict";
+
+    function plus(a, b) {
+        return (a + b)
+    }
+
+    function minus(a, b) {
+        return (a - b)
+    }
+
+    function multiple(a, b) {
+        return (a * b)
+    }
+
+    function divide(a, b) {
+        return (a / b)
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case 'сложить':
+                return (plus(arg1, arg2));
+            case 'вычесть':
+                return (minus(arg1, arg2));
+            case 'умножить':
+                return (multiple(arg1, arg2));
+            case 'разделить':
+                return (divide(arg1, arg2));
+            default:
+                return ('некорректная операция');
+        }
+    }
+
+    alert(mathOperation(+prompt('введите первое число'), +prompt('введите второе число'), prompt('укажите операцию')))
+
+
+</script>
