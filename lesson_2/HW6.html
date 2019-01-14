@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    "use strict";
+    let deposit = +prompt('введите сумму, которую хотите положить в банк');
+
+    if (deposit % 100 < 20) {
+        if (deposit % 100 === 1) {
+            alert(`Ваша сумма в ${deposit} рубль успешно зачислена.`)
+        } else if (deposit % 100 > 1 && deposit % 100 < 5) {
+            alert(`Ваша сумма в ${deposit} рубля успешно зачислена.`)
+        } else {
+            alert(`Ваша сумма в ${deposit} рублей успешно зачислена.`)
+        }
+    } else {
+        if (deposit % 10 === 1) {
+            alert(`Ваша сумма в ${deposit} рубль успешно зачислена.`)
+        } else if (deposit % 10 > 1 && deposit % 10 < 5) {
+            alert(`Ваша сумма в ${deposit} рубля успешно зачислена.`)
+        } else {
+            alert(`Ваша сумма в ${deposit} рублей успешно зачислена.`)
+        }
+    }
+
+</script>
