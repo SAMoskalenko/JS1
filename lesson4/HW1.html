@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    "use strict";
+    const numbers = {}; // создаем пустой объект
+
+    let num = parseInt(prompt('Введите положительное трехзначное число:'));
+    // получаем на ввод число (отбрасываем дробную часть на входе)
+    if (num >= 0 && num <= 999) { // если оно от 0 до 999 то разделяем его по десяткам
+        numbers.firstDigit = num % 10; // единицы
+        num = parseInt(num / 10);
+        numbers.secondDigit = num % 10; // десятки
+        numbers.thirdDigit = parseInt(num / 10); // сотни
+        console.log(numbers);
+    } else { // есл число не удовлетворяет значениям или не число
+        console.log('Вы ввели некорректное значение!'); //выводм сообщения
+        console.log(numbers); // и пустой объект
+    }
+
+</script>
